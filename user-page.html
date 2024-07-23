@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>userpage</title>
+    <link rel="stylesheet" href="Profile-style.css">
+        <!--Icon _ Link-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+</head>
+<body>
+    
+    <!-- <div class="user-box"> -->
+        <!-- <img src="" alt="" id="image"> -->
+        <!-- <h1 id="name"></h1> -->
+        <!-- <h2 id="title"></h2> -->
+        
+    <!--==================================== NAV-BAR ================================-->
+    <nav>
+        <div class="container">
+          <h2 class="log">logo</h2>
+          <div class="search-bar">
+            <input type="search" placeholder="search" id="search-input" />
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> 
+            <!-- <button onclick="handleSearch()">Search</button> -->
+            <div id="search-box">
+        
+            </div>
+  
+          </div>
+          <div class="create">
+            <button class="btn btn-danger" id="logout" for="create-post">
+              LOG OUT
+            </button>
+  
+            <label class="btn btn-primary" for="#create-post">Create</label>
+            <div class="profile-photo">
+              <img src="./images/my-profile.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  
+      <!-- <input id="searchValue" /> -->
+  
+      <!--========================= MAIN =========================-->
+  
+      <main>
+        <div class="container">
+          <!-------------------- LEFT --------------->
+          <div class="left">
+            <a class="proflie">
+              <div class="profile-photo">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <div class="handle">
+                <h4 id="name">dania</h4>
+                <!-- <p class="text-muted" id="title">@dani</p> -->
+              </div>
+             
+            </a>
+  
+            <!--------- SIDEBAR ------------>
+            <div class="sidebar">
+              <a class="menu-item active">
+                <span><i class="fa-solid fa-house"></i></span>
+                <h3>Home</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-globe"></i></span>
+                <h3>Explor</h3>
+              </a>
+              <a class="menu-item" id="notifications">
+                <span
+                  ><i class="fa-solid fa-bell"
+                    ><small class="notification-count">9</small></i
+                  ></span
+                >
+                <h3>Notification</h3>
+  
+                <!---- Notification-Popup -->
+  
+                <div class="notification-popup">
+                  <div>
+                    <div class="profile-photo">
+                      <img src="./images/profile-2.jpg" alt="" />
+                    </div>
+                    <!-- Notification Body-->
+                    <div class="notification-body">
+                      <b>keke benjemin</b> accepted your friend request
+                      <small class="text-muted">2 days Ago</small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="profile-photo">
+                      <img src="./images/profile-3.jpg" alt="" />
+                    </div>
+                    <!-- Notification Body-->
+                    <div class="notification-body">
+                      <b>keke benjemin</b> accepted your friend request
+                      <small class="text-muted">2 days Ago</small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="profile-photo">
+                      <img src="./images/profile-4.jpg" alt="" />
+                    </div>
+                    <!-- Notification Body-->
+                    <div class="notification-body">
+                      <b>keke benjemin</b> accepted your friend request
+                      <small class="text-muted">2 days Ago</small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="profile-photo">
+                      <img src="./images/profile-6.jpg" alt="" />
+                    </div>
+                    <!-- Notification Body-->
+                    <div class="notification-body">
+                      <b>keke benjemin</b> accepted your friend request
+                      <small class="text-muted">2 days Ago</small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="profile-photo">
+                      <img src="./images/profile-7.jpg" alt="" />
+                    </div>
+                    <!-- Notification Body-->
+                    <div class="notification-body">
+                      <b>keke benjemin</b> accepted your friend request
+                      <small class="text-muted">2 days Ago</small>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="menu-item" id="messages-notifications">
+                <span
+                  ><i class="fa-solid fa-message"
+                    ><small class="notification-count">6</small></i
+                  ></span
+                >
+                <h3>Message</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+                <h3>Bookmark</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-chart-pie"></i></span>
+                <h3>Analytics</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-brands fa-ethereum"></i></span>
+                <h3>Theme</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-solid fa-gear"></i></span>
+                <h3>Sittings</h3>
+              </a>
+            </div>
+  
+            <!-- Ending Side Bar -->
+  
+            <!-- <label class="btn btn-primary" for="create-post">Create Post</label> -->
+          </div>
+  
+          <!--========================= LEFT  ENDING ============================-->
+  
+          <!---------------- MIDDLE ------------------->
+  
+          <div class="middle">
+            <!-- -------------------------------- STORIES -------------------------------->
+  
+            <div class="stories">
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/my-profile.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-8.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-2.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-3.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-4.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-5.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-6.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="images/profile-7.jpg" alt="" />
+                </div>
+                <p class="name">your story</p>
+              </div>
+            </div>
+            <form action="" class="create-post">
+              <div class="profile-photo">
+                <img src="images/my-profile.jpg" alt="" />
+              </div>
+              <input
+                type="text"
+                placeholder="what's on your mind diana"
+                id="create-post"
+              />
+              <input type="submit" value="post" class="btn btn-primary" />
+            </form>
+  
+            <!--Api Data Fetching -->
+            <!-- <div id="user-name">
+                      
+                  </div>
+                  <div id="user-img"></div> -->
+  
+            <!-------------- Feeds --------------------->
+  
+            <!-------- Feed: ---------->
+            <div class="feeds">
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="./images/my-profile.jpg" alt="" />
+                    </div>
+                    <div class="ingo">
+                      <h3>Abdul Raheem</h3>
+                      <small>Lahore,15 Mintes Ago</small>
+                    </div>
+                  </div>
+                  <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+                <div class="photo">
+                  <img src="./images/upload-pic.jpg" alt="" />
+                </div>
+                <div class="action-buttons">
+                  <div class="interaction-button">
+                    <span id="dill"><i class="fa-regular fa-heart"></i></span>
+                    <span id="comment-button"
+                      ><i class="fa-regular fa-comment"></i
+                    ></span>
+                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                  </div>
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                  </div>
+                </div>
+                <div class="liked-by">
+                  <span>
+                    <img src="./images/profile-1.jpg" alt="" />
+                  </span>
+                  <span>
+                    <img src="./images/profile-2.jpg" alt="" />
+                  </span>
+                  <span>
+                    <img src="./images/profile-2.jpg" alt="" />
+                  </span>
+                  <p>liked by <b>Lorem, ipsum.</b> 323 others</p>
+                </div>
+                <div class="caption">
+                  <p>
+                    <b>Lorem, ipsum.</b>Lorem ipsum dolor sit amet.
+                    <span class="harsh-tag">#lifestyle</span>
+                  </p>
+                </div>
+                <div class="comments text-muted">View all 288 comments</div>
+                <div class="comment-main-section">
+                
+                    <div>
+                      <ul class="list">
+                        <li>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="main-card">
+        
+                      <div class="input-parent">
+                        <input
+                          type="text"
+                          class="comment-search-bar typeinp"
+                          placeholder="Comment on post"
+                        />
+        
+                        <button id="submit" class="btn-primary btn" onclick="button()">
+                          <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- <div class="comment-main-section">
+
+                <div>
+                  <ul class="list">
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-card">
+    
+                  <div class="input-parent">
+                    <input
+                      type="text"
+                      class="comment-search-bar typeinp"
+                      placeholder="Comment on post"
+                    />
+    
+                    <button id="submit" class="btn-primary btn" onclick="button()">
+                      <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+  
+            <!-- Mera TODO-LIST COde-->
+            <!-- <div class="comment-main-section">
+              <div>
+                <ul class="list">
+                  <li>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-card">
+  
+                <div class="input-parent">
+                  <input
+                    type="text"
+                    class="comment-search-bar typeinp"
+                    placeholder="Comment on post"
+                  />
+  
+                  <button id="submit" class="btn-primary btn" onclick="button()">
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+  
+          <!-- 
+              <div class="center" >
+                  <input  type="text" id="user-name" placeholder="Enter Username">
+                  <input  id="comment-title" type="text" placeholder="Enter comment" />
+                      <button id="add-comment"  onclick="addComments()">Add Comment</button>
+                    </div>    
+                  <div style="margin-top: 30px;" id="comment-List"></div> -->
+          <!-- <button id="delet">delet</button> -->
+  
+          <!-------------------- RIGHT --------------->
+          <div class="right"></div>
+        </div>
+      </main>
+    <!-- </div> -->
+
+    <script src="user-page.js"></script>
+    <script src="Profile-App.js"></script>
+</body>
+</html>

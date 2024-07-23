@@ -1,0 +1,18 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* .user-box{
+    width: 100%;
+    background-color: aqua;
+
+} */
+#name{
+    color: azure;
+    color: black;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
