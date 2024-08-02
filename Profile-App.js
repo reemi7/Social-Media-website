@@ -1,4 +1,4 @@
-let Name = document.querySelector("#name");
+let Name = document.getElementById("name");
 // if(localStorage.getItem('name') == ''){
 //   Name.innerText = 'User';
 // }

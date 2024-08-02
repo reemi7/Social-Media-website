@@ -7,6 +7,8 @@ let user_title = JSON.stringify(localStorage.getItem("clienttilte"));
 
 // `
 
+user_name= JSON.parse(user_name)
+
 console.log(user_image);
 console.log(user_name);
 console.log(user_title);
